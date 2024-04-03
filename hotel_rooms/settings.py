@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hotel_rooms.rooms',
     'hotel_rooms.bookings',
+    'django_socio_grpc',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GRPC_FRAMEWORK = {
+    "ROOT_HANDLERS_HOOK": "hotel_rooms.handlers.grpc_handlers"
+}
