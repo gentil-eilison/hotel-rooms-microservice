@@ -4,3 +4,4 @@ djangorestframework==3.15.1
 grpcio==1.62.1
 grcpio-tools==1.62.1
 django-socio-grpc==0.21.4
+pyscopg[binary,tools]==3.1.18
