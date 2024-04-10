@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator
 
 from hotel_rooms.rooms.models import Room
 
@@ -8,8 +9,8 @@ class Booking(models.Model):
     until_date = models.DateTimeField(verbose_name="Until")
     price = models.DecimalField(max_digits=9, decimal_places=2, verbose_name="Price")
     room = models.ForeignKey(Room, related_name="bookings", on_delete=models.PROTECT, verbose_name="Room")
-    payment_id = models.PositiveBigIntegerField(verbose_name="Payment ID")
-    user_id = models.PositiveBigIntegerField(verbose_name="User ID")
+    payment_id = models.PositiveBigIntegerField(verbose_name="Payment ID", validators=[MinValueValidator(1)])
+    user_id = models.PositiveBigIntegerField(verbose_name="User ID", validators=[MinValueValidator(1)])
 
     def __str__(self):
         return f"Room {self.room.numeration} from {self.from_date.date} until {self.until_date.date}"

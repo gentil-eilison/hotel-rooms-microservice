@@ -12,4 +12,4 @@ class BookingProtoSerializer(proto_serializers.ModelProtoSerializer):
         model = Booking
         fields = ("id", "from_date", "until_date", "price", "room", "payment_id", "user_id")
         proto_class = BookingResponse
-        proto_list_class = BookingListResponse
+        proto_class_list = BookingListResponse
