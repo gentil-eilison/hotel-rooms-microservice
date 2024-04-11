@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(hotel_rooms/bookings/grpc/bookings.proto\x12\x14hotel_rooms.bookings\x1a\x1bgoogle/protobuf/empty.proto\"#\n\x15\x42ookingDestroyRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"\x14\n\x12\x42ookingListRequest\"\\\n\x13\x42ookingListResponse\x12\x36\n\x07results\x18\x01 \x03(\x0b\x32%.hotel_rooms.bookings.BookingResponse\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"\xb2\x01\n\x1b\x42ookingPartialUpdateRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tfrom_date\x18\x02 \x01(\t\x12\x12\n\nuntil_date\x18\x03 \x01(\t\x12\r\n\x05price\x18\x04 \x01(\x01\x12\x0c\n\x04room\x18\x05 \x01(\x03\x12\x12\n\npayment_id\x18\x06 \x01(\x05\x12\x0f\n\x07user_id\x18\x07 \x01(\x05\x12\x1e\n\x16_partial_update_fields\x18\x08 \x03(\t\"\x85\x01\n\x0e\x42ookingRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tfrom_date\x18\x02 \x01(\t\x12\x12\n\nuntil_date\x18\x03 \x01(\t\x12\r\n\x05price\x18\x04 \x01(\x01\x12\x0c\n\x04room\x18\x05 \x01(\x03\x12\x12\n\npayment_id\x18\x06 \x01(\x05\x12\x0f\n\x07user_id\x18\x07 \x01(\x05\"\x86\x01\n\x0f\x42ookingResponse\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tfrom_date\x18\x02 \x01(\t\x12\x12\n\nuntil_date\x18\x03 \x01(\t\x12\r\n\x05price\x18\x04 \x01(\x01\x12\x0c\n\x04room\x18\x05 \x01(\x03\x12\x12\n\npayment_id\x18\x06 \x01(\x05\x12\x0f\n\x07user_id\x18\x07 \x01(\x05\"$\n\x16\x42ookingRetrieveRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x32\xc6\x04\n\x11\x42ookingController\x12W\n\x06\x43reate\x12$.hotel_rooms.bookings.BookingRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x12P\n\x07\x44\x65stroy\x12+.hotel_rooms.bookings.BookingDestroyRequest\x1a\x16.google.protobuf.Empty\"\x00\x12]\n\x04List\x12(.hotel_rooms.bookings.BookingListRequest\x1a).hotel_rooms.bookings.BookingListResponse\"\x00\x12k\n\rPartialUpdate\x12\x31.hotel_rooms.bookings.BookingPartialUpdateRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x12\x61\n\x08Retrieve\x12,.hotel_rooms.bookings.BookingRetrieveRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x12W\n\x06Update\x12$.hotel_rooms.bookings.BookingRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(hotel_rooms/bookings/grpc/bookings.proto\x12\x14hotel_rooms.bookings\x1a\x1bgoogle/protobuf/empty.proto\"#\n\x15\x42ookingDestroyRequest\x12\n\n\x02id\x18\x01 \x01(\x05\"\x14\n\x12\x42ookingListRequest\"\\\n\x13\x42ookingListResponse\x12\x36\n\x07results\x18\x01 \x03(\x0b\x32%.hotel_rooms.bookings.BookingResponse\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\"\x9e\x01\n\x1b\x42ookingPartialUpdateRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tfrom_date\x18\x02 \x01(\t\x12\x12\n\nuntil_date\x18\x03 \x01(\t\x12\r\n\x05price\x18\x04 \x01(\x01\x12\x0c\n\x04room\x18\x05 \x01(\x03\x12\x0f\n\x07user_id\x18\x07 \x01(\x05\x12\x1e\n\x16_partial_update_fields\x18\x08 \x03(\t\"q\n\x0e\x42ookingRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tfrom_date\x18\x02 \x01(\t\x12\x12\n\nuntil_date\x18\x03 \x01(\t\x12\r\n\x05price\x18\x04 \x01(\x01\x12\x0c\n\x04room\x18\x05 \x01(\x03\x12\x0f\n\x07user_id\x18\x07 \x01(\x05\"r\n\x0f\x42ookingResponse\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tfrom_date\x18\x02 \x01(\t\x12\x12\n\nuntil_date\x18\x03 \x01(\t\x12\r\n\x05price\x18\x04 \x01(\x01\x12\x0c\n\x04room\x18\x05 \x01(\x03\x12\x0f\n\x07user_id\x18\x07 \x01(\x05\"$\n\x16\x42ookingRetrieveRequest\x12\n\n\x02id\x18\x01 \x01(\x05\x32\xc6\x04\n\x11\x42ookingController\x12W\n\x06\x43reate\x12$.hotel_rooms.bookings.BookingRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x12P\n\x07\x44\x65stroy\x12+.hotel_rooms.bookings.BookingDestroyRequest\x1a\x16.google.protobuf.Empty\"\x00\x12]\n\x04List\x12(.hotel_rooms.bookings.BookingListRequest\x1a).hotel_rooms.bookings.BookingListResponse\"\x00\x12k\n\rPartialUpdate\x12\x31.hotel_rooms.bookings.BookingPartialUpdateRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x12\x61\n\x08Retrieve\x12,.hotel_rooms.bookings.BookingRetrieveRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x12W\n\x06Update\x12$.hotel_rooms.bookings.BookingRequest\x1a%.hotel_rooms.bookings.BookingResponse\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -29,13 +29,13 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_BOOKINGLISTRESPONSE']._serialized_start=154
   _globals['_BOOKINGLISTRESPONSE']._serialized_end=246
   _globals['_BOOKINGPARTIALUPDATEREQUEST']._serialized_start=249
-  _globals['_BOOKINGPARTIALUPDATEREQUEST']._serialized_end=427
-  _globals['_BOOKINGREQUEST']._serialized_start=430
-  _globals['_BOOKINGREQUEST']._serialized_end=563
-  _globals['_BOOKINGRESPONSE']._serialized_start=566
-  _globals['_BOOKINGRESPONSE']._serialized_end=700
-  _globals['_BOOKINGRETRIEVEREQUEST']._serialized_start=702
-  _globals['_BOOKINGRETRIEVEREQUEST']._serialized_end=738
-  _globals['_BOOKINGCONTROLLER']._serialized_start=741
-  _globals['_BOOKINGCONTROLLER']._serialized_end=1323
+  _globals['_BOOKINGPARTIALUPDATEREQUEST']._serialized_end=407
+  _globals['_BOOKINGREQUEST']._serialized_start=409
+  _globals['_BOOKINGREQUEST']._serialized_end=522
+  _globals['_BOOKINGRESPONSE']._serialized_start=524
+  _globals['_BOOKINGRESPONSE']._serialized_end=638
+  _globals['_BOOKINGRETRIEVEREQUEST']._serialized_start=640
+  _globals['_BOOKINGRETRIEVEREQUEST']._serialized_end=676
+  _globals['_BOOKINGCONTROLLER']._serialized_start=679
+  _globals['_BOOKINGCONTROLLER']._serialized_end=1261
 # @@protoc_insertion_point(module_scope)
