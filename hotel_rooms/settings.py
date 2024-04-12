@@ -134,5 +134,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 GRPC_FRAMEWORK = {
-    "ROOT_HANDLERS_HOOK": "hotel_rooms.handlers.grpc_handlers"
+    "ROOT_HANDLERS_HOOK": "hotel_rooms.handlers.grpc_handlers",
+    "GRPC_CHANNEL_PORT": 50054
 }
