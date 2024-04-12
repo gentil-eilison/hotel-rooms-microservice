@@ -10,6 +10,6 @@ from ..grpc.bookings_pb2 import (
 class BookingProtoSerializer(proto_serializers.ModelProtoSerializer):
     class Meta:
         model = Booking
-        fields = ("id", "from_date", "until_date", "price", "room", "payment_id", "user_id")
+        fields = ("id", "from_date", "until_date", "price", "room", "user_id")
         proto_class = BookingResponse
-        proto_list_class = BookingListResponse
+        proto_class_list = BookingListResponse
